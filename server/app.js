@@ -37,7 +37,9 @@ try{
   });
 }catch(err){};
 
+
 // db parse connection
+/*
 app.use(function(req,res,next){
   if(db){
     req.db = db;
@@ -61,7 +63,9 @@ app.use(function(req,res,next){
 
 
 app.use("/v1", v1);
-app.get("/", async (req,res) => {
+
+*/
+app.get("/", (req,res) => {
     res.status(200).json({
       status: true,
       res: "you are connected"
